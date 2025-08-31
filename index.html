@@ -3,160 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faculty of Law – 1st Sem Course Material</title>
+  <title>Faculty of Law - 1st Sem Course Material</title>
   <style>
     body {
+      font-family: Verdana, Geneva, sans-serif;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      padding: 0;
+      background: #f4f4f9;
       color: #333;
     }
     header {
+      background: #4a148c;
+      color: #fff;
       text-align: center;
       padding: 20px;
-      background: #2c3e50;
-      color: white;
-      font-size: 1.8em;
-      font-weight: bold;
     }
-    .container {
-      max-width: 1200px;
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
       margin: auto;
-      padding: 20px;
     }
-    .search-box {
-      text-align: center;
-      margin-bottom: 20px;
+    h2 {
+      color: #4a148c;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
     }
-    .search-box input {
-      width: 60%;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 1em;
+    ul {
+      list-style-type: none;
+      padding: 0;
     }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
+    ul li {
+      margin: 12px 0;
     }
-    .card {
-      background: white;
-      padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h3 {
-      font-size: 1.1em;
-      margin: 0 0 10px;
-    }
-    .buttons {
-      display: flex;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .buttons a {
-      flex: 1;
-      text-align: center;
-      padding: 8px;
-      border-radius: 8px;
+    ul li a {
       text-decoration: none;
-      color: white;
-      font-weight: bold;
+      font-size: 16px;
+      color: #800080;
+      transition: color 0.3s;
     }
-    .open-btn { background: #3498db; }
-    .download-btn { background: #2ecc71; }
-    .copy-section {
-      text-align: center;
-      margin: 20px 0;
-    }
-    .copy-section button {
-      padding: 10px 20px;
-      border: none;
-      background: #8e44ad;
-      color: white;
-      font-size: 1em;
-      border-radius: 8px;
-      cursor: pointer;
+    ul li a:hover {
+      color: #d500f9;
     }
     footer {
       text-align: center;
+      background: #333;
+      color: #fff;
       padding: 15px;
-      margin-top: 30px;
-      background: #2c3e50;
-      color: white;
-      font-size: 0.9em;
+      margin-top: 20px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Faculty of Law - 1st Sem Course Material</h1>
+  </header>
 
-  <header>Faculty of Law – 1st Sem Course Material</header>
-  <div class="container">
+  <section>
+    <h2>I Term LL.B.</h2>
+    <ul>
+      <li><a href="https://lawfaculty.du.ac.in/userfiles/downloads/LLBCM/Improvised Juris -1, LB-101 (1) (1)-1.pdf" target="_blank">LB-101 Jurisprudence-I (Revised Course Structure)</a></li>
+      <li><a href="https://lawfaculty.du.ac.in/userfiles/downloads/LLBCM/Ist%20Term_Jurisprudence-I_LB101_2023.pdf" target="_blank">LB-101 Jurisprudence-I (Previous Course Material)</a></li>
+      <li><a href="https://lawfaculty.du.ac.in/userfiles/downloads/LLBCM/Jurisprudence%20I Additional Readings (FINAL).pdf" target="_blank">LB-101 Jurisprudence-I (Additional Readings)</a></li>
+      <li><a href="https://lawfaculty.du.ac.in/userfiles/downloads/LLBCM/Ist%20Term_Law of Contract_LB102_2023.pdf" target="_blank">LB-102 Principles of Contract</a></li>
+      <li><a href="https://lawfaculty.du.ac.in/userfiles/downloads/Ist+Term_Law+of+Torts_LB103_2025(pdfgear.com).pdf" target="_blank">LB-103 Law of Torts</a></li>
+      <li><a href="https://lawfaculty.du.ac.in/userfiles/downloads/LLBCM/Law%20of Crimes-1 BNS 2025.pdf" target="_blank">LB-104 Law of Crimes - I (Bharatiya Nyaya Sanhita, 2023)</a></li>
+      <li><a href="https://lawfaculty.du.ac.in/userfiles/downloads/LLBCM/Ist%20Term_Family Law- I_LB105_2023.pdf" target="_blank">LB-105 Family Law I</a></li>
+    </ul>
+  </section>
 
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Search PDF materials...">
-    </div>
-
-    <div class="copy-section">
-      <button onclick="copyAllLinks()">Copy All PDF Links</button>
-    </div>
-
-    <div class="cards" id="pdfList">
-      <div class="card">
-        <h3>Indian Penal Code</h3>
-        <div class="buttons">
-          <a href="https://lawfaculty.du.ac.in//userfiles/downloads/1642570895-825f3c18c27f6cf9a6d8.pdf" class="open-btn" target="_blank">Open PDF</a>
-          <a href="https://lawfaculty.du.ac.in//userfiles/downloads/1642570895-825f3c18c27f6cf9a6d8.pdf" class="download-btn" download>Download</a>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Constitutional Law – I</h3>
-        <div class="buttons">
-          <a href="https://lawfaculty.du.ac.in//userfiles/downloads/1642571033-b74ab5c2f62e25987d35.pdf" class="open-btn" target="_blank">Open PDF</a>
-          <a href="https://lawfaculty.du.ac.in//userfiles/downloads/1642571033-b74ab5c2f62e25987d35.pdf" class="download-btn" download>Download</a>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Law of Contract</h3>
-        <div class="buttons">
-          <a href="https://lawfaculty.du.ac.in//userfiles/downloads/1642571108-741df93e04905a6db2c8.pdf" class="open-btn" target="_blank">Open PDF</a>
-          <a href="https://lawfaculty.du.ac.in//userfiles/downloads/1642571108-741df93e04905a6db2c8.pdf" class="download-btn" download>Download</a>
-        </div>
-      </div>
-    </div>
-
-    <h2 style="margin-top:40px;">II Term LL.B. (To be updated)</h2>
-
-  </div>
+  <section>
+    <h2>II Term LL.B.</h2>
+    <ul>
+      <li>📌 (You can add II Term course materials here later)</li>
+    </ul>
+  </section>
 
   <footer>
-    © Faculty of Law, University of Delhi. All rights reserved. | Website created by Anupam Singh, Law Centre I
+    <p>&copy; Faculty of Law, University of Delhi. All rights reserved.<br>
+       Website created by Anupam Singh, Law Centre I</p>
   </footer>
-
-  <script>
-    // Search filter
-    document.getElementById("searchInput").addEventListener("keyup", function() {
-      let filter = this.value.toLowerCase();
-      let cards = document.querySelectorAll(".card");
-      cards.forEach(card => {
-        let text = card.innerText.toLowerCase();
-        card.style.display = text.includes(filter) ? "" : "none";
-      });
-    });
-
-    // Copy all links
-    function copyAllLinks() {
-      let links = Array.from(document.querySelectorAll(".card .open-btn")).map(a => a.href).join("\n");
-      navigator.clipboard.writeText(links).then(() => {
-        alert("All PDF links copied to clipboard!");
-      });
-    }
-  </script>
-
 </body>
 </html>
